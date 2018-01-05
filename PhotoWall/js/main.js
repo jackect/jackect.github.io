@@ -1,5 +1,6 @@
 $(document).ready(function(){
   addPhotos();
+  select("#hk-btn").onclick=auto;
 });
 
 function select(selector) {
@@ -113,4 +114,25 @@ function turn(elem) {
     select('#nav_' + n).className = select('#nav_' + n).className.replace(/\s*i_back\s*/, ' ');
   }
   return elem.className = cls;
+}
+
+function auto() {
+    var i=0;
+    var flag=false;
+    var n=select(".nav")[0].children;
+    var st=setInterval(function(){
+         n[i].click();
+         i++;
+         flag=true;
+         console.log("start"+i);
+         if(i>=n.length){i=0};
+    },2000);
+    select("#wrap").onclick=function(event){
+        if(event.pageX && flag){
+            clearInterval(st);
+            flag=false;
+            console.log("end");
+            select("#hk-btn").style.display="block"}
+            }
+    select("#hk-btn").style.display="none";
 }

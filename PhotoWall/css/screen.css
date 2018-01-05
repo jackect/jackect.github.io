@@ -143,3 +143,11 @@ body {
   -moz-transform: rotateY(-180deg) scale(0.8);
   background-color: #555;
 }
+#hk-play {
+    position:absolute;
+    left:0px;
+}
+#hk-btn {
+    position:absolute;
+    right:0px;
+}
