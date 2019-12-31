@@ -18,7 +18,7 @@
         qqUrl: "https://i.qianbao.qq.com/wallet/sqrcode.htm?m=tenpay&f=wallet&a=1&ac=CAEQz9D2lQMY7pur8AU%3D_xxx_sign&u=851290191&n=%E5%B0%8F%E6%9D%B0-%E2%84%96",
         
         /* 在以下【双引号】中粘贴微信收款链接 */ 
-        wechatUrl: "https://wx.tenpay.com/f2f?t=AQAAAFtDAYCgnh0H4NWppc2G0n0%3D",
+        wechatUrl: "wxp://f2f0b6sDsIfCVdKCrB4j91pjjngWELZT1l9g",
         
         /* 在以下【双引号】中粘贴支付宝收款链接 */ 
         aliUrl: "https://qr.alipay.com/fkx09682dz5toi1qbgbfx73",
@@ -145,9 +145,10 @@
         document.getElementById("wechat-url").src = setting.qrcodeApi + urlEncode(setting.wechatUrl);
         document.getElementById("code-wechat").style.display = "block";
     } else if(navigator.userAgent.match(/QQ\//i)) {
+        window.location.href = setting.qqUrl;
         /* QQ */ 
-        document.getElementById("qq-url").src = setting.qrcodeApi + urlEncode(setting.qqUrl);
-        document.getElementById("code-qq").style.display = "block";
+        //document.getElementById("qq-url").src = setting.qrcodeApi + urlEncode(setting.qqUrl);
+        //document.getElementById("code-qq").style.display = "block";
     } else {
         /* 其它，显示“万能码” */ 
         document.getElementById("page-url").src = setting.qrcodeApi + urlEncode(window.location.href);
