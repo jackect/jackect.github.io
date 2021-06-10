@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>小杰★小颜</title>
+    <meta name="keywords" content="表白驿站，爱情树表白网页" />
+    <meta name="description" content="" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <style type="text/css">
+@font-face {
+    font-family: digit;
+    src: url("font/digital-7_mono.ttf") format("truetype");
+}
+body {
+	background: rgb(255, 255, 238); margin: 0px; padding: 0px; color: rgb(35, 31, 32); overflow: auto; font-family: "微软雅黑",sans-serif; font-size: 14px;
+}
+a {
+	color: rgb(0, 0, 0); font-size: 14px;
+}
+#main {
+	width: 100%;
+}
+#wrap {
+	margin: 10px auto 0px; width: 1100px; height: 680px; position: relative;
+}
+#text {
+	left: 60px; top: 80px; width: 400px; height: 425px; position: absolute;
+}
+#code {
+	font-size: 16px; display: none;
+}
+#clock-box {
+	left: 60px; top: 550px; font-size: 28px; display: none; position: absolute;
+}
+#clock-box a {
+	font-size: 28px; text-decoration: none;
+}
+#clock {
+	margin-left: 48px;
+}
+#clock .digit {
+    font-family: "digit";
+	font-size: 64px;
+}
+#canvas {
+	margin: 0px auto; width: 1100px; height: 680px;
+}
+#error {
+	margin: 60px auto 0px; text-align: center; display: none;
+}
+.hand {
+	cursor: pointer;
+}
+.say {
+	margin-left: 2em; color:#ff0000;
+}
+.space {
+	margin-right: 220px;
+}
+    </style>
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/jscex.min.js" type="text/javascript"></script>
+    <script src="js/jscex-parser.js" type="text/javascript"></script>
+    <script src="js/jscex-jit.js" type="text/javascript"></script>
+    <script src="js/jscex-builderbase.min.js" type="text/javascript"></script>
+    <script src="js/jscex-async.min.js" type="text/javascript"></script>
+    <script src="js/jscex-async-powerpack.min.js" type="text/javascript"></script>
+    <script src="js/functions.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/love.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body ondragstart="window.event.returnValue=false" oncontextmenu="window.event.returnValue=false"
+    onselectstart="event.returnValue=false">
+    <div id="main">
+        <div id="wrap">
+            <div id="text">
+                <div id="code">
+                    <span class=say>对于我们的相遇，已经不记得当初的点滴，只知道因为真诚和默契，因为灵犀相通，我们成了无话不谈的知己</span><br>
+                    <span class=say></span><br><span class=say>相识是缘分，正是缘分使我们相识在这个时空，让我们能用心去彼此感受这份一生难求的缘，也许我们只是茫茫黑夜中擦弦而过的船，能在瞬间照亮彼此的心灵，给对方以温暖，已经足够了，还何必奢求更多？</span><br>
+                    <span class=say></span><br><span class=say>何况我们已经失去了拥有彼此的资格，但此刻我却想善待自己，我不愿意为了顺从理智而使自己的感情变得虚伪，不想让以后的人生植满遗憾和悔恨，不想在白发苍苍时回首往事而泪流满面。</span><br>
+                    <span class=say></span><br><span class=say>当无眠晚风轻拂的时候，你是否心尖会有一丝颤动，我总是忍不住想你，辗转反侧想的都是你。</span><br>
+                    <span class="say"></span><br><span class="say"><span class="space"></span> -- 不吃猫の鱼🐠</span>
+<!-- <span class="say"></span><br>
+<span class="say">* {two}</span><br>
+<span class="say"></span><br>
+<span class="say">* {three}</span><br>
+<span class="say"></span><br>
+<span class="say">* {four}</span><br>
+<span class="say"></span><br>
+<span class="say">* {five} </span><br>
+<span class="say"></span><br>
+<span class="say">* {six}</span><br>
+<span class="say"></span><br>
+<span class="say">* {seven}</span><br>
+<span class="say"></span><br>
+<span class="say">* {eight}</span><br>-->
+                </div>
+            </div>
+            <div id="clock-box">这是我们相遇的~</span>
+                <div id="clock"></div>
+            </div><canvas width="1100" height="680" id="canvas"></canvas>
+        </div>
+    </div>
+    <script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+    <div style="display:none">
+        <audio src="https://ai.bbai520.com/music/music01.mp3" preload controls autoplay loop>
+        </audio>
+    </div>
+</body>
+
+</html>
