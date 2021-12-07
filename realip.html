@@ -12,12 +12,18 @@ position: absolute;
 top: 50%;
 left: 50%;
 transform: translate(-50%,-50%);
-background:#ccc;
 padding:16px;
 border-radius:8px;
+background: #e0e0e0;
+box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
 }
 p{
-font-size:28px;
+font-size:24px;
+}
+p.inline>iframe{
+display:inline;
+vertical-align:middle;
 }
 </style>
 </head>
@@ -26,6 +32,7 @@ font-size:28px;
 <canvas id="canvas-time"></canvas>
 <p>IP：<span id="s_ip">获取中...</span></p>
 <p>WebRTC IP：<span id="s_rtc">连接中...</span></p>
+<p class='inline'>IP138：<iframe src="https://2021.ip138.com/" rel="nofollow" scrolling="no" width="60%" height=26px" frameborder="0"></iframe></p>
 </div>
 <script>
 // ajax promise简略版
